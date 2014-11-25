@@ -5,7 +5,7 @@ module.exports = (grunt) ->
     coffee:
       compile:
         files:
-          'index.js': 'index.coffee'
+          'lib/main.js': 'lib/main.coffee'
 
     coffeelint:
       options:
@@ -13,7 +13,7 @@ module.exports = (grunt) ->
           level: 'ignore'
         no_empty_param_list:
           level: 'error'
-      src: ['index.coffee']
+      src: ['lib/main.coffee']
       test: ['spec/*.coffee']
 
     shell:
@@ -27,7 +27,7 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks('grunt-coffeelint')
   grunt.loadNpmTasks('grunt-contrib-coffee')
   grunt.loadNpmTasks('grunt-shell')
-  grunt.registerTask 'clean', -> require('rimraf').sync('index.js')
+  grunt.registerTask 'clean', -> require('rimraf').sync('lib/main.js')
   grunt.registerTask('lint', ['coffeelint'])
   grunt.registerTask('test', ['default', 'shell:test'])
   grunt.registerTask('default', ['lint', 'coffee'])

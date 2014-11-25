@@ -1,15 +1,15 @@
 {
   "name": "coffeestack",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "CoffeeScript stack trace converter",
-  "main": "./index.js",
+  "main": "./lib/main",
   "scripts": {
     "prepublish": "grunt clean lint coffee",
     "test": "grunt test"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kevinsawicki/coffeestack.git"
+    "url": "https://github.com/spark/coffeestack.git"
   },
   "keywords": [
     "CoffeeScript",
@@ -25,11 +25,11 @@
   },
   "license": "BSD",
   "bugs": {
-    "url": "https://github.com/kevinsawicki/coffeestack/issues"
+    "url": "https://github.com/spark/coffeestack/issues"
   },
   "dependencies": {
     "coffee-script": "~1.7.0",
-    "source-map": "git://github.com/spark/source-map.git"
+    "source-map": "git+https://github.com/spark/source-map.git#master"
   },
   "devDependencies": {
     "jasmine-focused": "1.x",

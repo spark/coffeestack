@@ -1,5 +1,5 @@
 path = require 'path'
-{convertLine, convertStackTrace} = require '../index'
+{convertLine, convertStackTrace} = require '../lib/main'
 
 describe 'CoffeeStack', ->
   describe 'convertLine(filePath, line, column)', ->
