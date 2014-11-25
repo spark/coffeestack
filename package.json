@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "coffee-script": "~1.7.0",
-    "source-map": "https://github.com/spark/source-map/archive/master.tar.gz"
+    "source-map": "git://github.com/spark/source-map.git"
   },
   "devDependencies": {
     "jasmine-focused": "1.x",
