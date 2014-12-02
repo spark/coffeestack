@@ -29,9 +29,7 @@
   },
   "dependencies": {
     "coffee-script": "~1.7.0",
-    "source-map": "git+https://github.com/spark/source-map.git#master"
-  },
-  "devDependencies": {
+    "source-map": "git+https://github.com/spark/source-map.git#master",
     "jasmine-focused": "1.x",
     "rimraf": "~2.2.0",
     "grunt-cli": "~0.1.9",
