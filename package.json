@@ -4,7 +4,7 @@
   "description": "CoffeeScript stack trace converter",
   "main": "./lib/main",
   "scripts": {
-    "preinstall": "grunt clean lint coffee",
+    "postinstall": "grunt clean lint coffee",
     "test": "grunt test"
   },
   "repository": {
