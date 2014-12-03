@@ -5,7 +5,7 @@ module.exports = (grunt) ->
     coffee:
       compile:
         files:
-          'lib/main.js': 'lib/main.coffee'
+          'lib/main.js': 'src/main.coffee'
 
     coffeelint:
       options:
@@ -13,7 +13,7 @@ module.exports = (grunt) ->
           level: 'ignore'
         no_empty_param_list:
           level: 'error'
-      src: ['lib/main.coffee']
+      src: ['src/main.coffee']
       test: ['spec/*.coffee']
 
     shell:
