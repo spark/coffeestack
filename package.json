@@ -30,7 +30,7 @@
   "dependencies": {
     "coffee-script": "~1.8.0",
     "fs-plus": "^2.5.0",
-    "source-map": "git+https://github.com/spark/source-map.git#master",
+    "source-map": "git+https://github.com/spark/source-map.git#master"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
